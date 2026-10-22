@@ -1,0 +1,274 @@
+.feature-page {
+  --navy: #102b4e;
+  --orange: #f97316;
+  --muted: #64748b;
+  color: var(--navy);
+  background: #f8fafc;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.feature-page * {
+  box-sizing: border-box;
+}
+
+.feature-hero {
+  padding: 76px 7%;
+  background: linear-gradient(120deg, #102b4e, #194b83);
+  color: white;
+}
+
+.eyebrow {
+  color: #f97316;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.feature-hero h1 {
+  max-width: 780px;
+  margin: 18px 0;
+  font-size: clamp(32px, 5vw, 58px);
+  line-height: 1.12;
+}
+
+.feature-hero p {
+  max-width: 650px;
+  line-height: 1.8;
+  color: #e2e8f0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.feature-page button,
+.contact-button {
+  border: 0;
+  border-radius: 9px;
+  background: var(--orange);
+  color: white;
+  padding: 13px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.feature-page button:hover,
+.contact-button:hover {
+  filter: brightness(0.94);
+}
+
+.feature-page .secondary-button {
+  background: white;
+  color: var(--navy);
+}
+
+.feature-section {
+  padding: 58px 7%;
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+.section-heading h2,
+.contact-section h2,
+.ebook-section h2 {
+  font-size: clamp(26px, 4vw, 38px);
+  margin: 10px 0;
+}
+
+.section-heading p,
+.course-card p,
+.ebook-section p,
+.contact-section p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.course-grid,
+.simple-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 23px;
+  box-shadow: 0 5px 20px #102b4e0b;
+}
+
+.course-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  background: #f1f5f9;
+  padding: 0.1cm;
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s;
+}
+
+.course-card:hover .course-image img {
+  transform: scale(1.05);
+}
+
+.course-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: #c45b0c;
+  background: #fff1e6;
+  padding: 5px 9px;
+  border-radius: 20px;
+}
+
+.course-card h3 {
+  margin: 17px 0 8px;
+}
+
+.course-card p {
+  min-height: 78px;
+  font-size: 14px;
+}
+
+.free-section {
+  background: #eef4fb;
+}
+
+.simple-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.simple-grid a,
+.simple-grid button {
+  background: white;
+  color: var(--navy);
+  border: 1px solid #dbe4ef;
+  text-align: center;
+  padding: 22px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.ebook-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 40px;
+  background: white;
+}
+
+.ebook-price {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 20px 0;
+  color: var(--orange);
+}
+
+.ebook-price small {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.ebook-cover {
+  background: var(--navy);
+  color: white;
+  border-bottom: 8px solid var(--orange);
+  border-radius: 8px;
+  padding: 38px 25px;
+  text-align: center;
+  box-shadow: 0 14px 30px #102b4e30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.ebook-cover img {
+  max-width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.ebook-cover h3 {
+  font-size: clamp(26px, 4vw, 42px);
+}
+
+.ebook-cover strong {
+  display: block;
+  color: #ffb52e;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.contact-section {
+  text-align: center;
+  background: #f1f5f9;
+}
+
+.small-note {
+  font-size: 12px;
+}
+
+.feature-footer {
+  text-align: center;
+  background: #0b1f38;
+  color: white;
+  padding: 28px 16px;
+}
+
+.feature-footer p {
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.back-button {
+  margin: 16px;
+}
+
+@media (max-width: 900px) {
+  .course-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ebook-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .feature-hero {
+    padding: 48px 22px;
+  }
+
+  .feature-section {
+    padding: 40px 20px;
+  }
+
+  .course-grid,
+  .simple-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-card p {
+    min-height: 0;
+  }
+}

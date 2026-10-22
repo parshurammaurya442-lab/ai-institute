@@ -1,0 +1,16 @@
+{
+  "projects": {},
+  "targets": {
+    "ai-institute-bdd1f": {
+      "hosting": {
+        "main-site": [
+          "ai-institute-bdd1f"
+        ],
+        "static-site": [
+          "ai-institute-cleaning"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

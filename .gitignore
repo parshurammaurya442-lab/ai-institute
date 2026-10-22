@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Production build
+ai-institute/build/
+
+# Firebase cache
+.firebase/
+
+# Logs
+npm-debug.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
